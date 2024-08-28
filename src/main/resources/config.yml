@@ -1,0 +1,6 @@
+updateInterval: 5 #Determines how often the location the compass points to is updated in server ticks
+compassCooldown: 240 #Compass cooldown in server ticks
+includeCreative: false #If false the compass will never point to a player in creative mode
+includeSpectator: false #If false the compass will never point to a player in spectator mode
+includeAdventure: false #If false the compass will never point to a player in adventure mode
+includeSurvival: true #If false the compass will never point to a player in survival mode
