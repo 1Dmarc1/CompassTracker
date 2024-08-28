@@ -1,0 +1,4 @@
+name: CompassTracker
+version: '${version}'
+main: me.dmarc.compasstracker.CompassTracker
+api-version: '1.16'
