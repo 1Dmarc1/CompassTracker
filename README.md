@@ -1,6 +1,6 @@
 # CompassTracker
 
-**CompassTracker** is a Minecraft Spigot plugin that transforms compasses into player-tracking devices. Instead of pointing to the world spawn, compasses will direct players to the nearest player, adding excitement to survival games, manhunts, and other multiplayer scenarios.
+**CompassTracker** is a Minecraft Spigot plugin that transforms compasses into player-tracking devices. Instead of pointing to the world spawn, compasses will direct players to the nearest player.
 
 ## Features
 
