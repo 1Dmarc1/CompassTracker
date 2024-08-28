@@ -12,7 +12,7 @@
 
 ## Installation
 
-1. **Download** the latest release from the [Releases](https://github.com/YourUsername/CompassTracker/releases) page.
+1. **Download** the latest release from the [Releases](https://github.com/1Dmarc1/CompassTracker/releases/) page.
 2. **Place** the `.jar` file into your server's `plugins` directory.
 3. **Restart** your server to load the plugin.
 4. **Configure** the plugin by editing the `config.yml` file in the `plugins/CompassTracker` directory.
