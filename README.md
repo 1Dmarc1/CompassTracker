@@ -74,5 +74,3 @@ You can customize CompassTracker through the `config.yml` file, which is generat
 - **Dependencies:** None.
 
 ---
-
-Feel free to contribute, suggest new features, or report bugs! Enjoy the hunt with **CompassTracker**! 🧭
