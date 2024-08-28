@@ -70,7 +70,7 @@ You can customize CompassTracker through the `config.yml` file, which is generat
   ```
 
 ## Compatibility
-- **Minecraft Version:** Compatible with Minecraft 1.19 and above.
+- **Minecraft Version:** Compatible with Minecraft 1.20 and above.
 - **Dependencies:** None.
 
 ---
