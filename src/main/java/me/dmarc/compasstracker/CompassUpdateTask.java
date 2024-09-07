@@ -8,13 +8,13 @@ import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.potion.PotionEffect;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.UUID;
 
 public class CompassUpdateTask implements Runnable {
-    private static final HashMap<Player, Tuple<Player, Double>> tracking = new HashMap<>();
+    private static final HashMap<UUID, Tuple<Player, Double>> tracking = new HashMap<>();
     private int taskID = -1;
     private boolean includeCreative;
     private boolean includeSpectator;
@@ -22,7 +22,7 @@ public class CompassUpdateTask implements Runnable {
     private boolean includeSurvival;
 
     public static Tuple<Player, Double> getTrackedPlayer(Player player) {
-        return tracking.get(player);
+        return tracking.get(player.getUniqueId());
     }
 
     @Override
@@ -51,7 +51,7 @@ public class CompassUpdateTask implements Runnable {
                 closestPlayerdistance = 0;
             }
             setCompassDirection(self, closestPlayer.getLocation());
-            tracking.put(self, new Tuple<>(closestPlayer, closestPlayerdistance));
+            tracking.put(self.getUniqueId(), new Tuple<>(closestPlayer, closestPlayerdistance));
         }
     }
 

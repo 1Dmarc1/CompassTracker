@@ -29,9 +29,12 @@ public class CompassClickListener implements Listener {
 
             if (mainHandItem == Material.COMPASS) {
                 Tuple<Player, Double> trackedPlayer = CompassUpdateTask.getTrackedPlayer(player);
+                if (trackedPlayer == null) {
+                    trackedPlayer = new Tuple<>(event.getPlayer(), 0.0);
+                }
+
                 long distance = Math.round(trackedPlayer.second());
                 player.sendMessage("Tracking: " + trackedPlayer.first().getName() + " (" + distance + " blocks)");
-
                 player.setCooldown(mainHandItem, cooldownTicks); //Set cooldown
             }
         }
